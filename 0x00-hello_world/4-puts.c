@@ -1,7 +1,11 @@
-/*puts() is used to print string in c programming*/
 #include <stdio.h>
+/**
+ * main - Prints string
+ * Description: Prints "\"prints string"
+ * Return: 0
+ */
 int main(void)
 {
-puts("Programming is like building a multilingual puzzle\n"
-    return 0;
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
