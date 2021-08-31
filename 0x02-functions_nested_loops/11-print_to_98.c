@@ -10,14 +10,14 @@ void print_to_98(int n)
 	{
 		while (n <= 98)
 		{
-			printf ("%i", i);
+			printf ("%i", n);
 			n++;
 		}
 	else
 	{
 		while (n > 98)
 		{
-			printf("%i", i);
+			printf("%i", n);
 			n--;
 		}
 	printf(98);
