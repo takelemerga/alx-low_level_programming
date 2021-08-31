@@ -11,7 +11,9 @@ void print_to_98(int n)
 	{
 		while (j <= 98)
 		{
-			printf ("%i", j);
+			printf("%i", j);
+				if (j != 98)
+			printf(" ");
 			j++;
 		}
 	}
@@ -20,6 +22,7 @@ void print_to_98(int n)
 		while (j > 98)
 		{
 			printf("%i", j);
+			 printf(" ");
 			j--;
 		}
 	printf("%i", 98);
