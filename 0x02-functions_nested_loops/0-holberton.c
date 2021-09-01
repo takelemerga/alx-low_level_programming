@@ -14,5 +14,6 @@ int main(void)
 		_putchar(c[j]);
 		j++;
 		}
+               _putchar('\n');
 	return (0);
 }
