@@ -17,7 +17,7 @@ void times_table(void)
 			}
 			_putchar(',');
 			_putchar(' ');
-			if (prod >= 10)
+			if ((i * j) >= 10)
 			{
 				_putchar((i * j) / 10 + 48);
 				_putchar((i * j) % 10 + 48);
