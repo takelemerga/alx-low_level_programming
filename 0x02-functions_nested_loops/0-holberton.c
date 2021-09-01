@@ -5,14 +5,15 @@
 */
 int main(void)
 {
-	char c[10] = "Holberton";
-	int j = 0;
-
-		while (j < 10)
-		{
-			_putchar(c[j]);
-			j++;
-		}
+	_putchar('H');
+	_putchar('o');
+	_putchar('l');
+	_putchar('b');
+	_putchar('e');
+	_putchar('r');
+	_putchar('t');
+	_putchar('o');
+	_putchar('n');
 	_putchar('\n');
 	return (0);
 }
