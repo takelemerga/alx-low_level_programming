@@ -7,15 +7,15 @@
  */
 int _strlen(char *c)
 {
-        int length = 0;
+	int length = 0;
 
-        while (*c != '\0')
-        {
-                length += 1;
-                c++;
+	while (*c != '\0')
+	{
+		length += 1;
+	c++;
 
-        }
-        return (length);
+	}
+	return (length);
 }
 
 /**
@@ -28,7 +28,7 @@ void puts_half(char *str)
 	int size, i, half;
 
 	size = _strlen(str);
-	half = (size % 2 == 0) ? size / 2 : size % 2; 
+	half = (size % 2 == 0) ? size / 2 : size % 2;
 
 	for (i = half; i < size; i++)
 		_putchar(*(str + i));
