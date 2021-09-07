@@ -24,10 +24,9 @@ void rev_string(char *s)
 	s[k] = s[(size - 1) - k];
 	s[(size - 1) - k] = temp;
 	}
-	while (*s)
+	for (i = 0; i < size; i++)
 	{
-	_putchar(*s);
-	s++;
+	_putchar(*(s + i));
 	}
 	_putchar('\n');
 }
