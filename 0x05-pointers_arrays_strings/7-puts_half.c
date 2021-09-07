@@ -28,7 +28,7 @@ void puts_half(char *str)
 	int size, i, half;
 
 	size = _strlen(str);
-	half = (size % 2 == 0) ? size / 2 : size % 2;
+	half = (size % 2 == 0) ? size / 2 : (size-1) / 2;
 
 	for (i = half; i < size; i++)
 		_putchar(*(str + i));
