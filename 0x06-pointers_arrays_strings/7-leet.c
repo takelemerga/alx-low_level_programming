@@ -9,7 +9,7 @@
 char *leet(char *c)
 {
 	char *p = c;
-	char letter[] = "aeotl";
+	char letter[] = {'a', 'e', 'o', 't', 'l'};
 	int value[] = {4, 3, 0, 7, 1};
 	int i;
 
