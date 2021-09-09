@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strlen - returns the length of a string
  * @c: c is pointer that holds character array base adress
@@ -34,8 +35,9 @@ char *_strncat(char *dest, char *src, int n)
 	{
 	dest[i + j] = src[i];
 	i++;
+	j++;
 	}
-	dest[i + j] = '\0';
+	dest[j] = '\0';
 	return (dest);
 }
 
