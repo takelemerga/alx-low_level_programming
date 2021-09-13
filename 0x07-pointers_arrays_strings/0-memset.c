@@ -20,5 +20,6 @@ char *_memset(char *s, char b, unsigned int n)
 		*p++ = b;
 		i++;
 	}
+	_putchar('\n');
 	return (p);
 }
