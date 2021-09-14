@@ -12,6 +12,7 @@ char *_strstr(char *haystack, char *needle)
 {
 	char *hay, *nee;
 
+
 	while (*haystack != '\0')
 	{
 		nee = needle;
@@ -32,6 +33,8 @@ char *_strstr(char *haystack, char *needle)
 		{
 			haystack++;
 		}
+	if (*haystack == '\0' && started == 0)
+		return (0);
 	}
 	return (0);
 }
