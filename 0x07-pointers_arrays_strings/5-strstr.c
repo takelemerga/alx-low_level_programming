@@ -12,13 +12,13 @@ char *_strstr(char *haystack, char *needle)
 {
 	char *hay, *nee;
 
-	while (*haystack)
+	while (*haystack != '\0')
 	{
 		nee = needle;
 		hay = haystack;
 		int started = 0;
 
-		while (*nee && *haystack == *nee)
+		while (*nee != '\0' && *hay != '\0' && *haystack == *nee)
 		{
 			started = 1;
 			haystack++;
