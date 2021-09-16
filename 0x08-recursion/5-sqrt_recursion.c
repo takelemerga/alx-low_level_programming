@@ -2,9 +2,8 @@
 
 /**
  * is_squre_root - determines the square root of
- * @j: an input value
+ * @j: input value
  * @i: input value
- *
  * Return: returns the input val
  */
 
@@ -24,7 +23,6 @@ int is_square_root(int i, int j)
 /**
  * _sqrt_recursion - returns square root
  * @n: input size
- *
  * Return: returns the natural square root of a number
  */
 
