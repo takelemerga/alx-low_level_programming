@@ -7,6 +7,7 @@
   *
   * Return: the string duplicated
   */
+
 char *_strdup(char *str)
 {
 	int i, j = 0;
@@ -19,13 +20,14 @@ char *_strdup(char *str)
 	{
 		j++;
 	}
-	str2 = malloc(sizeof(char) * j);
+printf("%d:", j);
+	str2 = malloc(sizeof(char) * j + 1);
 	if (str2 == NULL)
 	return (NULL);
 
-	for (i = 0; i < j; i++)
+	for (i = 0; i <= j; i++)
 	{
-		if (i != j - 1)
+		if (i != j)
 			str2[i] = str[i];
 		else
 			str2[i] = '\0';
