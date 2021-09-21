@@ -33,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (s == NULL)
 	return (NULL);
-	s = fun1(size, i);
+	s = fun1(size, i, s);
 	return (s);
 }
 /**
@@ -43,7 +43,7 @@ char *str_concat(char *s1, char *s2)
 *Return: pointer
 */
 
-char *fun1(int size, int i)
+char *fun1(int size, int i, char *s)
 {
 	int j = 0, k = 0;
 
