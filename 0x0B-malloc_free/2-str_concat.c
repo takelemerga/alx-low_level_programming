@@ -40,6 +40,9 @@ char *str_concat(char *s1, char *s2)
 * fun1 - concatenate
 *@size: size of two strings to be concatenated
 *@i: size of the first string
+*@s: pointer to s
+*@s1: pointer to s1
+*@s2: pointer to s2
 *Return: pointer
 */
 
