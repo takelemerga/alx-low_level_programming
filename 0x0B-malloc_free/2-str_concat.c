@@ -33,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (s == NULL)
 	return (NULL);
-	s = fun1(size, i, s);
+	s = fun1(size, i, s, s1, s2);
 	return (s);
 }
 /**
