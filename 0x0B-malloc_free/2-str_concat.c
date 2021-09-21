@@ -43,7 +43,7 @@ char *str_concat(char *s1, char *s2)
 *Return: pointer
 */
 
-char *fun1(int size, int i, char *s)
+char *fun1(int size, int i, char *s, char *s1, char *s2)
 {
 	int j = 0, k = 0;
 
