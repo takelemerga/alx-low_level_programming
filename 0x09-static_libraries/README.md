@@ -1,0 +1,1 @@
+creates c static library
