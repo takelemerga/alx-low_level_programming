@@ -41,10 +41,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 			prev = ptr;
 			ptr = ptr->next;
 			if (ptr == NULL)
-				break;
+				return (NULL);
 			i++;
 		}
 		temp->next = ptr;
-		prev->next = temp;
+		prev = temp;
 		return (temp);
 }
