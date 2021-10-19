@@ -24,18 +24,18 @@ int main(int argc, char **argv)
 	copy_file(argv[1], argv[2]);
 	exit(0);
 }
-
 /**
-  * copy_file -copy file from src to des
-  * @src: source file
-  * @dest:destination file 
-  *
-  * Return: nothing 
-  */
+* copy_file -copy file from src to des
+* @src: source file
+* @dest:destination file
+*
+* Return: nothing
+*/
+
 void copy_file(const char *src, const char *dest)
 {
 	int from, to, rd;
-                                      
+
 	char buff[1024];
 
 	from = open(src, O_RDONLY);
@@ -54,19 +54,16 @@ void copy_file(const char *src, const char *dest)
 			exit(99);
 		}
 	}
-
 	if (rd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
 		exit(98);
 	}
-
-	if (close(from) == -1) 
+	if (close(from) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", from);
 		exit(100);
 	}
-
 	if (close(to) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", to);
