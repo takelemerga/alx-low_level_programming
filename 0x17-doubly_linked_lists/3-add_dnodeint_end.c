@@ -9,7 +9,7 @@
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *new_node, *last_node;
-	*last_node = *head;
+	last_node = *head;
 
 	new_node = malloc(sizeof(dlistint_t));
 	if (new_node == NULL)
@@ -17,7 +17,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	new_node->n = n;
 	new_node->next = NULL;
 
-	/* if if linked list is empty then new node become head*/
+	/* if linked list is empty then new node become head*/
 	if (*head == NULL)
 	{
 		new_node->prev = NULL;
