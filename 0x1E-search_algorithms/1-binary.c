@@ -9,13 +9,13 @@
  */
 void print_array(int *array, size_t size)
 {
-	size_t i;
+	size_t k;
 
 	printf("Searching in array:");
-	for (i = 0; i < size; i++)
+	for (k = 0; k < size; k++)
 	{
-		printf(" %d", array[i]);
-		if (i != size - 1)
+		printf(" %d", array[k]);
+		if (k != size - 1)
 			printf(",");
 	}
 	printf("\n");
